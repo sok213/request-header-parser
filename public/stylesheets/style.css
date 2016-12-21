@@ -1,0 +1,13 @@
+body { text-align: center; }
+
+h1, h3 { font-family: 'Lato', sans-serif; }
+
+h3 { color: #636363; }
+
+.container {
+	width: 520px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	border-top: thin solid #B9C4D1;
+}
