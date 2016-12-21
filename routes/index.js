@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 		title: 'Request Header Parser Microservice',
 		lang: req.headers['accept-language'].split(',')[0],
 		ip: ip.address(),
-		os: os.cpus()[0].model + ' ' + os.platform() + ' ' + os.arch()
+		os: os.platform() + ' ' + os.arch()
 	});
 });
 
