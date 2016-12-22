@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 		lang: req.headers['accept-language'].split(',')[0],
 		ip: req.header('x-forwarded-for') || req.connection.remoteAddress,
 		os: agent.toString().split('/')[0] + '/' + 
-			agent.toString().split('/')[1].replace(/[0.]/g, '' )
+			agent.toString().split('/')[1].substring(0, agent.toString().split('/')[1].length - 5)
 	});
 });
 
