@@ -7,7 +7,7 @@ var express = require('express'),
 router.get('/', function(req, res, next) {
 	
 	var agent = useragent.parse(req.headers['user-agent']);
-	console.log(agent.toString());
+	console.log(req.ip);
 
 	res.render('index', {
 		title: 'Request Header Parser Microservice',
